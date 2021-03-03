@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Register_as_tenant">
+
+    <TextView
+        android:id="@+id/registerField_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="326dp"
+        android:layout_marginBottom="682dp"
+        android:text="@string/register"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fieldFirstname_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="611dp"
+        android:text="@string/first_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registration_tenant"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/fieldLastName_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/last_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="60dp" />
+
+    <EditText
+        android:id="@+id/emailAddress_tenant"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="@string/tenam"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_tenant"
+        android:importantForAutofill="no"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/email_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mail"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName_tenant"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/firstName_tenant"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/f_name"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldFirstname_tenant"
+        android:importantForAutofill="no"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/lastName_tenant"
+        android:layout_width="149dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/anyuru"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldLastName_tenant"
+        android:autofillHints=""
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/phone_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/phone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailAddress_tenant"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/phoneNumber_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/phNo"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_tenant"
+        android:autofillHints=""
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/password_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber_tenant"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/editPassword_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/string_pwd"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_tenant"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/Registration_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#E91E63"
+        android:textColor="#FDFCFD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPassword_tenant"
+        tools:text="REGISTER" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Register_as_tenant">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="326dp"
+        android:layout_marginRight="326dp"
+        android:layout_marginBottom="682dp"
+        android:text="@string/register"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/labelFirstName_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginRight="328dp"
+        android:layout_marginBottom="611dp"
+        android:text="@string/first_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registration_landlord"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <TextView
+        android:id="@+id/labelLastName_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/last_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lastName_landlord"
+        app:layout_constraintLeft_toLeftOf="@id/firstName_landlord"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="225dp" />
+
+    <EditText
+        android:id="@+id/emailAddress_landlord"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_landlord"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/email_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/emailAddress"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName_landlord" />
+
+    <EditText
+        android:id="@+id/firstName_landlord"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="@string/davie"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="137dp"
+        app:layout_constraintTop_toBottomOf="@id/labelFirstName_landlord"/>
+
+    <EditText
+        android:id="@+id/lastName_landlord"
+        android:layout_width="149dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/anyuru"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="@id/editLocation_landlord"
+        app:layout_constraintStart_toEndOf="@+id/firstName_landlord"
+        app:layout_constraintTop_toBottomOf="@id/labelLastName_landlord" />
+
+    <TextView
+        android:id="@+id/phone_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/phone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress_landlord" />
+
+    <EditText
+        android:id="@+id/phoneNumber_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/_0772519722"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_landlord" />
+
+    <TextView
+        android:id="@+id/password_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editLocation_landlord"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/editPassword_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enterPassword"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_landlord"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/Registration_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="70dp"
+        android:background="#E91E63"
+        android:textColor="#FDFCFD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPassword_landlord"
+        tools:text="REGISTER"
+        android:layout_marginStart="160dp" />
+
+    <TextView
+        android:id="@+id/labelLocation_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber_landlord"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/editLocation_landlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:ems="10"
+        android:hint="@string/nansana"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLocation_landlord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

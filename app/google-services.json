@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "744121353931",
+    "project_id": "sasularent",
+    "storage_bucket": "sasularent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744121353931:android:25ec7560473e395cacbd4e",
+        "android_client_info": {
+          "package_name": "com.example.sasularent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744121353931-eq3lu3onjj0vgo5hg1v37rgv3b8e93md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiC_0CwbZ33GMDb-IUrSQUity0qAodGb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744121353931-eq3lu3onjj0vgo5hg1v37rgv3b8e93md.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
